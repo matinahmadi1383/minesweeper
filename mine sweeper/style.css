@@ -1,0 +1,132 @@
+*{
+	box-sizing: border-box;
+}
+#game{
+	width: 402px;
+	height: 402px;
+	border: 1px solid black;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: fixed;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%,0%);
+}
+.cell{
+	width: 40px;
+	height: 40px;
+	border: 1px solid black;
+	display: inline-block;
+	line-height: 40px;
+	text-align: center;
+	color: white;
+	color: blue;
+	font-weight: bold;
+	font-size: 30px;
+}
+.cell:hover{
+	background-color: silver;
+}
+#tryAgain{
+	background-color: yellow;
+	width: 150px;
+	height: 50px;
+	border: 1px solid silver;
+	font-size: 20px;
+	border-radius: 5px;
+	position: fixed;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: none;
+}
+#tryAgain:hover{
+	animation: Glass 0.5s forwards;
+}
+@keyframes Glass{
+	from{
+		background-color: orange;
+	}
+	to{
+		background-color: green;
+	}
+}
+#result{
+	font-size: 20px;
+	position: fixed;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+#timer {
+	position: fixed;
+	right: 39%;
+	width: 50px;
+	height: 50px;
+	background-image: url(clock_icon.png);
+	background-size: cover;
+	background-position: center center;
+}
+#time{
+	position: fixed;
+	/*right: 33%;*/
+	right: 35%;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	transform: translate(-50%,10%);
+}
+#level{
+	position: fixed;
+	left: 36%;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	transform: translate(-10%,10%);
+}
+#nLevel{
+	position: fixed;
+	left: 44%;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	color: green;
+	transform: translate(-50%,10%);
+}
+#bomb{
+	position: fixed;
+	right: 47%;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	top: 1%;
+}
+#nbomb{
+	position: fixed;
+	right: 43%;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	transform: translate(-50%,10%);
+}
+#Play{
+	position: fixed;
+	top: 6%;
+	right: 23%;
+	font-size: 30px;
+}
+#timeLeft{
+	position: fixed;
+	top: -2%;
+	right: 7%;
+	font-size: 30px;
+	text-shadow: 5px 5px 5px black;
+}
+#clock{
+	position: fixed;
+	font-size: 40px;
+	right: 39%;
+	z-index: 100;
+}
